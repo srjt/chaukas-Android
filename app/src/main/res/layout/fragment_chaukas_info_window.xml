@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.chaukasInfoWindow"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#10ff6600">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Title"
+            android:gravity="left"
+            android:id="@+id/tvTitle"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Description"
+            android:id="@+id/tvDesc"
+            android:gravity="left" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Address"
+            android:id="@+id/tvAddress"
+            android:textSize="10dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Date and By"
+                android:id="@+id/tvDate"
+                android:gravity="left"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dip" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0 COMMENTS"
+                android:id="@+id/tvComments"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dip" />
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tblComments">
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:id="@+id/txtPostComment"
+                android:maxLines="3" />
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Post"
+                android:id="@+id/btnPostComment" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

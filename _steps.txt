@@ -1,0 +1,2 @@
+added andoid project with map template
+generated google map Id

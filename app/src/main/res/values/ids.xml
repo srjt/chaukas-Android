@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="frgmMenuBottom" type="id" />
+    <item name="btnToday" type="id"/>
+    <item name="btnWeek" type="id"/>
+    <item name="btnMonth" type="id"/>
+    <item name="btnYear" type="id"/>
+
+</resources>
